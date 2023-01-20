@@ -1,0 +1,16 @@
+[package]
+name = "hosts"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+argh = "0.1.10"
+colored = "2.0.0"
+fqdn = "0.2.3"
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
